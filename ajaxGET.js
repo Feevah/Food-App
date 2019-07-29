@@ -6,7 +6,7 @@ function loadDoc() {
        //document.getElementById("demo").innerHTML = this.responseText;
        //console.log(this.responseText);
        //var google = JSON.stringify(this.responseText);
-          console.log(this.responseText)
+          // console.log(this.responseText)
       }
     };
     //xhttp.open("GET", "lisa.txt", true);
