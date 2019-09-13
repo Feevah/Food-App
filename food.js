@@ -18,6 +18,19 @@ var menu = {"Fries": 10,
 			 "Coke": 18}
 
 
+var menuItems = Object.keys(menu)
+var menuQuan = Object.values(menu)
+for(counter=0; counter < menuItems.length; counter++){
+	Object.getOwnPropertyNames(menu).forEach(
+  function (val, idx, array) {
+    document.querySelector(".menu").innerHTML= val + ' -> ' + menu[val];
+  }
+)
+};
+	// document.querySelector('.menu').innerHTML = Object.keys(menu) + " " + Object.values(menu);
+	// document.querySelector(".menu").innerHTML= menuItems
+	
+// }
 
 button.addEventListener("click", function(){
 
@@ -47,6 +60,7 @@ for(counter=0; counter < menuItems.length; counter++){
 });
 
 
+
 // choices.addEventListener("click", function(){
 
 
@@ -55,7 +69,8 @@ for(counter=0; counter < menuItems.length; counter++){
 
 };
 
-	// console.log();
+
+
 
 // if (items[0] === menuItems){
 // console.log("yeah");
