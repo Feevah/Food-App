@@ -20,15 +20,15 @@ var menu = {"Fries": 10,
 
 var menuItems = Object.keys(menu)
 var menuQuan = Object.values(menu)
-for(counter=0; counter < menuItems.length; counter++){
-	Object.getOwnPropertyNames(menu).forEach(
-  function (val, idx, array) {
-    document.querySelector(".menu").innerHTML= val + ' -> ' + menu[val];
-  }
-)
-};
+// for(counter=0; counter < menuItems.length; counter++){
+// 	Object.getOwnPropertyNames(menu).forEach(
+//   function (val, idx, array) {
+//     document.querySelector(".menu").innerHTML= val + ' -> ' + menu[val];
+//   }
+// )
+// };
 	// document.querySelector('.menu').innerHTML = Object.keys(menu) + " " + Object.values(menu);
-	// document.querySelector(".menu").innerHTML= menuItems
+	document.querySelector(".menu").innerHTML= menuItems
 	
 // }
 
