@@ -8,16 +8,29 @@ var input = document.querySelector("input");
 
 var menu = {"Fries": 10, 
 			 "Shakes": 20,
-			 "BaconBite": 50, 
-			 "Chicken": 45, 
-			 "Fruit Bowl": 9, 
+			 "BaconBites": 50, 
+			 "Chicken Fingers": 45, 
+			 "Fruit Bowls": 9, 
 			 "Chips": 29, 
 			 "Hot Dogs": 104, 
-			 "Salad": 56, 
+			 "Salads": 56, 
 			 "Pizza": 29, 
 			 "Coke": 18}
 
 
+var menuItems = Object.keys(menu)
+var menuQuan = Object.values(menu)
+// for(counter=0; counter < menuItems.length; counter++){
+// 	Object.getOwnPropertyNames(menu).forEach(
+//   function (val, idx, array) {
+//     document.querySelector(".menu").innerHTML= val + ' -> ' + menu[val];
+//   }
+// )
+// };
+	// document.querySelector('.menu').innerHTML = Object.keys(menu) + " " + Object.values(menu);
+	document.querySelector(".menu").innerHTML= menuItems
+	
+// }
 
 button.addEventListener("click", function(){
 
@@ -34,9 +47,9 @@ for(counter=0; counter < menuItems.length; counter++){
 	// }
 	if (menuItems[counter] == items[0]) {
 	var remainder = menuQuan[counter] - items[1];
-	console.log(remainder);
+	alert("We have " + remainder + " left");
 	if (remainder <= 0){
-		console.log("sorry we are out")
+		alert("sorry we don't have enough to complete your order")
 	}
 	}
 
@@ -47,6 +60,7 @@ for(counter=0; counter < menuItems.length; counter++){
 });
 
 
+
 // choices.addEventListener("click", function(){
 
 
@@ -55,7 +69,8 @@ for(counter=0; counter < menuItems.length; counter++){
 
 };
 
-	// console.log();
+
+
 
 // if (items[0] === menuItems){
 // console.log("yeah");
