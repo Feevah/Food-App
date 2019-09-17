@@ -28,7 +28,7 @@ var menuQuan = Object.values(menu)
 // )
 // };
 	// document.querySelector('.menu').innerHTML = Object.keys(menu) + " " + Object.values(menu);
-	document.querySelector(".menu").innerHTML= menuItems
+	document.querySelector(".menu").innerHTML= (menuItems + " ")
 	
 // }
 
@@ -47,9 +47,9 @@ for(counter=0; counter < menuItems.length; counter++){
 	// }
 	if (menuItems[counter] == items[0]) {
 	var remainder = menuQuan[counter] - items[1];
-	console.log(remainder);
+	alert("We have " + remainder + " left");
 	if (remainder <= 0){
-		console.log("sorry we are out")
+		alert("sorry we don't have enough to complete your order")
 	}
 	}
 
