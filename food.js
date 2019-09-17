@@ -8,12 +8,12 @@ var input = document.querySelector("input");
 
 var menu = {"Fries": 10, 
 			 "Shakes": 20,
-			 "BaconBite": 50, 
-			 "Chicken": 45, 
-			 "Fruit Bowl": 9, 
+			 "BaconBites": 50, 
+			 "Chicken Fingers": 45, 
+			 "Fruit Bowls": 9, 
 			 "Chips": 29, 
 			 "Hot Dogs": 104, 
-			 "Salad": 56, 
+			 "Salads": 56, 
 			 "Pizza": 29, 
 			 "Coke": 18}
 
@@ -28,7 +28,7 @@ var menuQuan = Object.values(menu)
 // )
 // };
 	// document.querySelector('.menu').innerHTML = Object.keys(menu) + " " + Object.values(menu);
-	document.querySelector(".menu").innerHTML= (menuItems + " ")
+	document.querySelector(".menu").innerHTML= menuItems
 	
 // }
 
