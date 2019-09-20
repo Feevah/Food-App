@@ -1,3 +1,69 @@
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #777;
+	padding: 30px;
+}
+
+.header {
+	height: 95vh;
+	background-image: linear-gradient(to right bottom, 
+	rgba(191, 107, 134, 0.5), 
+	rgba(204, 29, 84, 0.5)),
+	url(../img/ffood.jpg);
+	background-size: cover;
+	background-position: center;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+	position: relative;
+}
+
+.logo-box {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+
+}
+.logo {
+	height: 75px;
+}
+
+.heading-p {
+	color: #fff;
+	text-transform: uppercase;
+
+}
+
+.heading-pmain {
+	display: block;
+	font-size: 60px;
+	letter-spacing: 35px;
+	font-weight: 400;
+
+}
+
+.heading-smain {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 15.4px;
+}
+
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .menu {
 	color:blue;
 	font-size: 20px;
