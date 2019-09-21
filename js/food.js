@@ -32,6 +32,24 @@ var menuQuan = Object.values(menu)
 	
 // }
 
+// if(characterCode == 13)
+// {
+//     return false; // returning false will prevent the event from bubbling up.
+// }
+// else
+// {
+//     return true;
+// }
+
+// function runScript(e) {
+//     //See notes about 'which' and 'key'
+//     if (e.keyCode == 13) {
+//         var tb = document.getElementById("scriptBox");
+//         eval(tb.value);
+//         return false;
+//     }
+// }
+
 button.addEventListener("click", function(){
 
 var customerOrder = input.value;
