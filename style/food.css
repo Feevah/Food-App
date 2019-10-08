@@ -166,6 +166,22 @@ body {
 	opacity: 0;
 }
 
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 4 1fr;
+	margin: 50px auto;
+}
+
+.food-pic {
+	border-style:solid;
+	border-width: 2px;
+	border-color: rgba(191, 107, 134, 0.5);
+	height: 150px;
+	width: 245px;
+	padding: 7px;
+}
+
 
 
 .menu {
