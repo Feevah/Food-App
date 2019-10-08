@@ -1,0 +1,22 @@
+{
+  "name": "foodapp",
+  "version": "1.0.0",
+  "description": "food ordering",
+  "main": "index.js",
+  "scripts": {
+   "compile:sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feevah/Food-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feevah/Food-App/issues"
+  },
+  "homepage": "https://github.com/Feevah/Food-App#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

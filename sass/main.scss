@@ -1,3 +1,8 @@
+$color-primary: #cc1d54
+$color-light: #bf6b86
+$color-dark: #82072e
+
+
 @keyframes moveLeft {
 	0%{
 		opacity:0;
@@ -54,8 +59,6 @@ body {
 	color: #777;
 	padding: 30px;
 }
- 
-
 
 .header {
 	height: 95vh;
