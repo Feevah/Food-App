@@ -182,7 +182,9 @@ body {
 	padding: 7px;
 }
 
-
+.item-info {
+	display: none;
+}
 
 .menu {
 	color:blue;

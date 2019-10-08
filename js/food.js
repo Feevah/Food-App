@@ -87,7 +87,12 @@ for(counter=0; counter < menuItems.length; counter++){
 
 };
 
+function order () {
+	document.querySelector(".item-info").style.display = "block"
+};
 
+
+document.querySelector(".food-pic").addEventListener('mouseover', order);
 
 
 // if (items[0] === menuItems){
