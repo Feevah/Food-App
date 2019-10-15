@@ -86,15 +86,16 @@ body {
 	height: 75px;
 }
 
-.heading-p {
+.heading{
+	&-p {
 	color: #fff;
 	text-transform: uppercase;
 
 	backface-visibility: hidden;
 
-}
+	}
 
-.heading-pmain {
+	&-pmain {
 	display: block;
 	font-size: 60px;
 	letter-spacing: 20.1px;
@@ -102,9 +103,9 @@ body {
 	animation-name: moveLeft;
 	animation-duration: 1s;
 	animation-timing-function: ease-out;
-}
+	}
 
-.heading-smain {
+	&-smain {
 	display: block;
 	font-size: 20px;
 	font-weight: 700;
@@ -112,7 +113,10 @@ body {
 	animation-name: moveRight;
 	animation-duration: 1s;
 	animation-timing-function: ease-out;
+	}
 }
+
+
 
 .text-box {
 	position: absolute;
@@ -122,8 +126,9 @@ body {
 	text-align: center;
 }
 
-.btn:link,
-.btn:visited {
+.btn {
+	&:link,
+	&:visited {
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-top: 25px;
@@ -132,28 +137,35 @@ body {
 	border-radius: 100px;
 	transition: all .2s;
 	position: relative;
-}
-.btn:hover {
+	}
+	&:hover {
 	transform: translateY(-3px);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-}
+		&::after{
+		transform: scaleX(1.1) scaleY(1.4);
+		opacity: 0;
+		}
+	}
 
-.btn:active {
+	&:active {
 	transform: translateY(-1px);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-}
+	}
 
-.btn-white {
+	&-white {
 	background-color: #fff;
 	color: #777;
-}
+		&::after {
+   		background-color: #fff;
+		}
+	}
 
-.btn-animate {
+	&-animate {
 	animation: moveBtn .5s ease-out .75s;
 	animation-fill-mode: backwards;
- }
+ 	}
 
-.btn::after {
+	&::after {
 	content: "";
 	display: inline-block;
 	height: 100%;
@@ -164,16 +176,12 @@ body {
 	left: 0;
 	z-index: -1;
 	transition: all .4s;
+	}
+
+
+
 }
 
-.btn-white::after {
-   background-color: #fff;
-}
-
-.btn:hover::after{
-	transform: scaleX(1.1) scaleY(1.4);
-	opacity: 0;
-}
 
 .grid{
 	display: grid;
