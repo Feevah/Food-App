@@ -25,7 +25,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-}
+};
 
 
 
@@ -35,7 +35,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 4 1fr;
 	margin: 50px auto;
-}
+};
 
 .food-pic {
 	border-style:solid;
@@ -44,13 +44,13 @@
 	height: 120px;
 	width: auto;
 	padding: 7px;
-}
+};
 
 .item-info {
 	display: none;
-}
+};
 
 .menu {
 	color:blue;
 	font-size: 20px;
-}
+};
