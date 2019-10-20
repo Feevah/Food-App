@@ -54,3 +54,19 @@ body {
 
 	}
 }
+
+.heading-third{
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+.paragraph{
+	font-size: 1.2rem;
+
+	&:not(:last-child){
+		margin-bottom: 3rem;
+	}
+
+}
