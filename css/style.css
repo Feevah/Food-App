@@ -189,6 +189,24 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0px); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    background-image: linear-gradient(to right, #82072e, #bf6b86);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(191, 107, 134, 0.5), rgba(204, 29, 84, 0.5)), url(../img/ffood.jpg);
@@ -234,8 +252,17 @@ body {
 
 .section-about {
   background-color: #f5d0dc;
-  padding: 10rem 0;
+  padding: 10rem 3rem;
   margin-top: -10vh; }
+
+.section-feature {
+  padding: 12em 3rem;
+  background-image: linear-gradient(to right bottom, rgba(191, 107, 134, 0.5), rgba(204, 29, 84, 0.5)), url(../img/dogs.jpg);
+  background-size: cover;
+  margin-top: -5rem;
+  transform: skewY(3deg); }
+  .section-feature > * {
+    transform: skewY(-3deg); }
 
 .text-box {
   position: absolute;
