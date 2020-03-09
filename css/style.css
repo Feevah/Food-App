@@ -234,6 +234,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #c491eb, #642694); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #bf6b86, #82072e); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #f76d6d, #ba0202); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -247,9 +251,9 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #c491eb, #642694), url(../img/salads.jpg); }
     .card__picture--2 {
-      background-image: url(../img/shakes.jpg); }
+      background-image: linear-gradient(to right bottom, #bf6b86, #82072e), url(../img/shakes.jpg); }
     .card__picture--3 {
-      background-image: url(../img/shakes.jpg); }
+      background-image: linear-gradient(to right bottom, #f76d6d, #ba0202), url(../img/pizza.jpg); }
   .card__heading {
     font-size: 1.8rem;
     font-weight: 250;
@@ -257,7 +261,7 @@ body {
     text-align: right;
     position: absolute;
     top: 12rem;
-    right: 4rem;
+    right: 2rem;
     text-transform: uppercase;
     width: 75%; }
   .card__heading-span {
@@ -266,6 +270,10 @@ body {
     box-decoration-break: clone; }
     .card__heading-span-1 {
       background-image: linear-gradient(to right bottom, rgba(196, 145, 235, 0.85), rgba(100, 38, 148, 0.85)); }
+    .card__heading-span-2 {
+      background-image: linear-gradient(to right bottom, rgba(191, 107, 134, 0.85), rgba(130, 7, 46, 0.85)); }
+    .card__heading-span-3 {
+      background-image: linear-gradient(to right bottom, rgba(247, 109, 109, 0.85), rgba(186, 2, 2, 0.85)); }
   .card__details {
     padding: 1.5rem; }
     .card__details ul {
