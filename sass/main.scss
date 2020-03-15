@@ -2,7 +2,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
 @import "base/base";
 @import "base/animations";
 @import "base/typography";
@@ -14,17 +13,12 @@
 @import "components/card";
 @import "components/story";
 @import "components/bg-video";
-
-
+@import "components/form";
 
 @import "layout/header";
 @import "layout/grid";
 
 @import "pages/home";
-
-
-
-
 
 .text-box {
 	position: absolute;
@@ -32,32 +26,29 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-};
+}
 
-
-
-
-.grid{
+.grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 4 1fr;
 	margin: 50px auto;
-};
+}
 
 .food-pic {
-	border-style:solid;
+	border-style: solid;
 	border-width: 2px;
 	border-color: rgba(191, 107, 134, 0.5);
 	height: 120px;
 	width: auto;
 	padding: 7px;
-};
+}
 
 .item-info {
 	display: none;
-};
+}
 
 .menu {
-	color:blue;
+	color: blue;
 	font-size: 20px;
-};
+}
