@@ -1,31 +1,27 @@
-.section-about{
+.section-about {
 	background-color: $color-pink-light;
 	padding: 10rem 3rem;
 	margin-top: -10vh;
-};
+}
 
-.section-feature{
+.section-feature {
 	padding: 12em 3rem;
-	background-image: linear-gradient(to right bottom, 
-	rgba(191, 107, 134, 0.5), 
-	rgba(204, 29, 84, 0.5)),
-	url(../img/dogs.jpg);
+	background-image: linear-gradient(to right bottom, rgba(191, 107, 134, 0.5), rgba(204, 29, 84, 0.5)),
+		url(../img/dogs.jpg);
 	background-size: cover;
 	margin-top: -5rem;
 
 	transform: skewY(3deg);
 
 	& > * {
-	transform: skewY(-3deg);
-
+		transform: skewY(-3deg);
 	}
 }
 
-.section-dishes{
+.section-dishes {
 	background-color: $color-pink-light;
 	padding: 10rem 0 8rem 0;
 	margin-top: -10vh;
-
 }
 
 .section-stories {
@@ -33,21 +29,17 @@
 	position: relative;
 }
 
-
 .section-reserve {
-	padding: 15rem 0;
+	padding: 11rem 3rem;
 	background-image: linear-gradient(to right bottom, $color-light, $color-dark);
-	}
+}
 
 .reserve {
-	background-image: linear-gradient(108deg,
-									   rgba($color-white, .8) 0%,
-									   rgba($color-white, .7) 55%,
-									   transparent 55%) ,				
-	 								   url(../img/fries.jpg);
+	background-image: linear-gradient(108deg, rgba($color-white, .8) 0%, rgba($color-white, .7) 55%, transparent 55%),
+		url(../img/fries.jpg);
 	background-size: cover;
 	border-radius: 3px;
-	box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
+	box-shadow: 0 1.5rem 4rem rgba($color-black, .6);
 
 	height: 50rem;
 
