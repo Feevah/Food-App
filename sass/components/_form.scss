@@ -1,6 +1,11 @@
 .form {
 	&__group:not(:last-child) {
-		margin-bottom: 2rem;
+		// margin-bottom: 2rem;
+	}
+
+	&__party {
+		color: $color-grey-dark;
+		padding-inline-start: initial;
 	}
 	&__input {
 		font-size: 1.5rem;
@@ -47,7 +52,7 @@
 	&__radio-group {
 		width: 47%;
 		display: inline-block;
-		padding: 0 3rem;
+		padding: 0 2rem;
 	}
 	&__radio-input {
 		display: none;
@@ -57,7 +62,7 @@
 		font-size: $default-font-size;
 		cursor: pointer;
 		position: relative;
-		padding-left: 3.2rem;
+		padding-left: 2.2rem;
 	}
 
 	&__radio-button {
@@ -67,8 +72,8 @@
 		border-radius: 50%;
 		display: inline-block;
 		position: absolute;
-		left: 0;
-		right: 1rem;
+		left: -0.5rem;
+		right: 0.5rem;
 		top: -.4rem;
 
 		&::after {

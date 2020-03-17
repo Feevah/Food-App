@@ -48,6 +48,15 @@
 		}
 	}
 
+	&-dark-red {
+		background-color: $color-dark;
+		color: $color-white;
+		// padding: 20px 35px;
+		&::after {
+			background-color: #fff;
+		}
+	}
+
 	&-animate {
 		animation: moveBtn .5s ease-out .75s;
 		animation-fill-mode: backwards;
