@@ -508,11 +508,11 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding: 5rem 2rem;
   font-size: 1.4rem;
   color: color-grey-light; }
   .footer__logo {
-    width: 15rem;
+    width: 10rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #fff7f9;
