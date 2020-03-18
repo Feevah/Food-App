@@ -506,6 +506,44 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: color-grey-light; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #fff7f9;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__ list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link {
+    color: #fff7f9; }
+    .footer__link:link, .footer__link:visited {
+      color: color-grey-light;
+      background-color: #333;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all .2sec; }
+    .footer__link:hover, .footer__link:active {
+      color: #cc1d54;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: rotate(30deg) scale(1.3); }
+  .footer__copyright {
+    border-top: 1px solid #fff7f9;
+    padding-top: 2rem;
+    display: inline-block;
+    width: 80%;
+    float: right; }
+
 .section-about {
   background-color: #f5d0dc;
   padding: 10rem 3rem;
