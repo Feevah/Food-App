@@ -507,10 +507,10 @@ body {
     width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
 
 .footer {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.6);
   padding: 5rem 2rem;
   font-size: 1.4rem;
-  color: color-grey-light; }
+  color: #fff; }
   .footer__logo {
     width: 10rem;
     height: auto; }
@@ -528,13 +528,13 @@ body {
     color: #fff7f9; }
     .footer__link:link, .footer__link:visited {
       color: color-grey-light;
-      background-color: #333;
+      background-color: transparent;
       text-transform: uppercase;
-      text-decoration: none;
+      text-decoration: underline;
       display: inline-block;
       transition: all .2sec; }
     .footer__link:hover, .footer__link:active {
-      color: #cc1d54;
+      color: #bf6b86;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
       transform: rotate(30deg) scale(1.3); }
   .footer__copyright {

@@ -1,8 +1,8 @@
 .footer {
-	background-color: $color-grey-dark-3;
+	background-color: rgba($color-grey-dark-3, .6);
 	padding: 5rem 2rem;
 	font-size: 1.4rem;
-	color: color-grey-light;
+	color: #fff;
 
 	&__logo-box {
 	}
@@ -36,16 +36,16 @@
 		&:link,
 		&:visited {
 			color: color-grey-light;
-			background-color: $color-grey-dark-3;
+			background-color: transparent;
 			text-transform: uppercase;
-			text-decoration: none;
+			text-decoration: underline;
 			display: inline-block;
 			transition: all .2sec;
 		}
 
 		&:hover,
 		&:active {
-			color: $color-primary;
+			color: $color-light;
 			box-shadow: 0 1rem 2rem rgba($color-black, .4);
 			transform: rotate(30deg) scale(1.3);
 		}
