@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Food </title>
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -40,14 +40,14 @@
 		<h1 class="heading-p">
 			<span class="heading-pmain">Good Grub</span>
 			<span class="heading-smain">It Gets You Goin'</span>
-			<a href="#" class="btn btn-white btn-animate">Our Menu</a>
+			<a href="#popup" class="btn btn-white btn-animate">Our Menu</a>
 		</h1>
 	</div>
 	
 </header>
 
 <main>
-	<section class="section-about">
+	<section class="section-about" id="section-about">
 		<div class="u-center-text u-margin-bottom-big">
 			<h2 class="heading-secondary">
 			food for your stretchy pants
@@ -70,7 +70,7 @@
 					Bacon ipsum dolor amet picanha cupim beef chicken tri-tip, porchetta landjaeger buffalo corned beef. Ham hock jowl sausage, prosciutto frankfurter beef flank short ribs drumstick brisket pork belly cow cupim strip steak. 
 				</p>
 
-				<a href="#" class="btn-text">Learn More &rarr;</a>
+				<a href="#popup" class="btn-text">Takeout & Delivery &rarr;</a>
 			</div>
 			<div class="col-1-of-2">
 				<div class="composition">
@@ -168,7 +168,7 @@
 								<p class="card__price-only">Starting at</p>
 								<p class="card__price-value">$8.00</p>
 							</div>
-							<a href="#" class="btn btn-white">Order</a>
+							<a href="#popup" class="btn btn-white">Order</a>
 						</div>
 					</div>
 				</div>
@@ -200,7 +200,7 @@
 								<p class="card__price-only">Starting at</p>
 								<p class="card__price-value">$5.00</p>
 							</div>
-							<a href="#" class="btn btn-white">Order</a>
+							<a href="#popup" class="btn btn-white">Order</a>
 						</div>
 					</div>
 				</div>	
@@ -232,7 +232,7 @@
 								<p class="card__price-only">Starting at</p>
 								<p class="card__price-value">$10.00</p>
 							</div>
-							<a href="#" class="btn btn-white">Order</a>
+							<a href="#popup" class="btn btn-white">Order</a>
 						</div>
 					</div>
 				</div>
@@ -240,7 +240,7 @@
 		</div>
 
 		<div class="u-center-text u-margin-top-big">
-			<a href="#" class="btn btn-red">Full Menu</a>
+			<a href="#popup" class="btn btn-red">Full Menu</a>
 		</div>
 	</section>
 
@@ -298,7 +298,7 @@
 			</div>
 		</div>
 		<div class="u-center-text u-margin-top-big">
-			<a href="#" class="btn-text">Read More &rarr;</a>
+			<a href="#popup" class="btn-text">Read More &rarr;</a>
 		</div>
 
 	</section>
@@ -381,6 +381,24 @@
 		</div>
 	</div>
 </footer>
+
+<div class="popup" id="popup">
+	<div class="popup__content">
+		<div class="popup__left">
+			<img src="img/takeout-1.jpg" class="popup__img" alt="Food pic">
+			<img src="img/takeout-2.jpg" class="popup__img" alt="Food pic">
+		</div>
+		<div class="popup__right">
+			<a href="#section-about" class="popup__close">&times;</a>
+			<h2 class="heading-secondary u-margin-bottom-small">Prepared Fresh and Delivered Quickly</h2>
+			<h3 class="heading-third u-margin-bottom-small">ToGo &ndash; Call now &ndash; Get it in a jiff!</h3>
+			<p class="popup-text">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts 
+				fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+			</p>
+			<a href="#" class="btn btn-red">Order Now</a>
+		</div>
+	</div>
+</div>
 
 <!-- Float Grids -->
 
