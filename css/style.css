@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
@@ -16,7 +16,11 @@ html {
       font-size: 75%; } }
 
 body {
-  padding: 30px; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 @keyframes moveLeft {
   0% {
@@ -49,7 +53,6 @@ body {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
   color: #777; }
 
@@ -66,18 +69,25 @@ body {
   animation-name: moveLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out; }
+  @media (max-width: 37.5em) {
+    .heading-pmain {
+      letter-spacing: 1rem;
+      font-size: 4rem; } }
 
 .heading-smain {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 700;
-  letter-spacing: 11.4px;
+  letter-spacing: 1.75rem;
   animation-name: moveRight;
   animation-duration: 1s;
   animation-timing-function: ease-out; }
+  @media (max-width: 37.5em) {
+    .heading-smain {
+      letter-spacing: 0.5rem; } }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   background-image: linear-gradient(to right, #82072e, #bf6b86);
@@ -86,17 +96,23 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 2.6rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.1rem 1rem 2rem rgba(130, 7, 46, 0.2); }
 
 .heading-third {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.2rem; }
+  font-size: 1.5rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -244,7 +260,7 @@ body {
   position: relative;
   height: 52rem; }
   .card__side {
-    font-size: 3rem;
+    font-size: 4.1rem;
     height: 52rem;
     transition: all .8s ease;
     position: absolute;
@@ -288,7 +304,7 @@ body {
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #f76d6d, #ba0202), url(../img/pizza.jpg); }
   .card__heading {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 250;
     color: #fff;
     text-align: right;
@@ -331,7 +347,7 @@ body {
     margin-bottom: 8rem;
     color: #fff; }
   .card__price-only {
-    font-size: 1.4rem;
+    font-size: 3.4rem;
     text-transform: uppercase; }
   .card__price-value {
     font-size: 4rem;
@@ -564,7 +580,14 @@ body {
   margin: 0 auto;
   text-align: center; }
   .row:not(:last-child) {
-    margin-bottom: 6rem; }
+    margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 60rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -573,6 +596,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 2rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 2rem) / 2); }
   .row .col-1-of-3 {
@@ -588,9 +618,15 @@ body {
 
 .footer {
   background-color: rgba(0, 0, 0, 0.84);
-  padding: 3.5rem 2.5rem;
-  font-size: 1.4rem;
+  padding: 4.5rem 0;
+  font-size: 1.8rem;
   color: #fff; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 3.5rem 0; } }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
   .footer__logo {
     width: 10rem;
     height: auto; }
@@ -598,6 +634,10 @@ body {
     border-top: 1px solid #fff7f9;
     padding-top: 2rem;
     display: inline-block; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__ list {
     list-style: none; }
   .footer__item {
@@ -623,6 +663,10 @@ body {
     display: inline-block;
     width: 80%;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .navigation_checkbox {
   display: none; }
@@ -638,6 +682,10 @@ body {
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   text-align: center; }
+  @media (max-width: 56.25em) {
+    .navigation_button {
+      top: 4.4rem;
+      right: 4.4rem; } }
 
 .navigation_background {
   height: 6rem;
@@ -649,6 +697,10 @@ body {
   background-image: radial-gradient(#bf6b86, #cc1d54);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
+  @media (max-width: 56.25em) {
+    .navigation_background {
+      top: 4.9rem;
+      right: 4.9rem; } }
 
 .navigation_nav {
   height: 100vh;
