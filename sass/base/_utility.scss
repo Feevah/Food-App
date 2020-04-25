@@ -6,10 +6,18 @@
 	margin-bottom: 1rem !important;
 }
 .u-margin-bottom-medium {
-	margin-bottom: 2rem !important;
+	margin-bottom: 3rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 3rem !important;
+	}
 }
 .u-margin-bottom-big {
-	margin-bottom: 4rem !important;
+	margin-bottom: 6rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 4rem !important;
+	}
 }
 
 .u-margin-top-big {
