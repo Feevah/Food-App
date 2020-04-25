@@ -8,6 +8,9 @@
 	@include respond(tab-port) {
 		padding: 3.5rem 0;
 	}
+	@include respond(tab-land) {
+		padding: 3.5rem 1rem;
+	}
 
 	&__logo-box {
 		text-align: center;

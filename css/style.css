@@ -702,6 +702,9 @@ body {
   @media (max-width: 56.25em) {
     .footer {
       padding: 3.5rem 0; } }
+  @media (max-width: 75em) {
+    .footer {
+      padding: 3.5rem 1rem; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }

@@ -44,11 +44,18 @@
 			@content;
 		}
 	} //900px
+
+	@if $breakpoint == tab-9 {
+		@media (max-width: 65em) {
+			@content;
+		}
+	} //1024px
 	@if $breakpoint == tab-land {
 		@media (max-width: 75em) {
 			@content;
 		}
 	} //1200px
+
 	@if $breakpoint == widescreen {
 		@media (min-width: 112.5em) {
 			@content;
