@@ -287,9 +287,9 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .card {
-  perspective: 150rem;
   -moz-perspective: 150rem;
   -webkit-perspective: 150rem;
+  perspective: 150rem;
   position: relative;
   height: 52rem; }
   .card__side {
@@ -300,9 +300,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -581,6 +581,11 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all .3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -646,7 +651,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73vh);
   position: relative; }
 
-@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+@media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
   background-image: linear-gradient(to right bottom, rgba(191, 107, 134, 0.5), rgba(204, 29, 84, 0.5)), url(../img/ffood.jpg); }
 
 .logo-box {
